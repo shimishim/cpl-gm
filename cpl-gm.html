@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+	body {
+		overflow: auto;
+	}
+	
+	h1.intro {
+		font-size: 10.5vw;
+		font-weight: 500;
+		animation: 12s fadeIn;
+		animation-fill-mode: forwards;
+		visibility: hidden;
+	}
+	
+	@keyframes fadeIn {
+		99% {
+			visibility: hidden;
+		}
+		100% {
+			visibility: visible;
+		}
+	}
+
+	a:before {
+		content: "馃挊";
+		display: block;
+		position: absolute;
+		color: rgb(233 30 99 / 70%);
+		font-size: 14vw;
+		transition: all ease 0.5s;
+		z-index: -1;
+		right: 20%;
+		top: -110%;
+		transform: rotate(30deg);
+	}
+
+	a:hover:before {
+		font-size: 160vw;
+		color: #e91e63;
+		right: -40%;
+		top: -398%;
+	}
+
+	a:after {
+		content: "馃挊";
+		display: block;
+		position: absolute;
+		color: #ff8ebd;
+		font-size: 0;
+		transition: all ease 0.5s;
+		z-index: -1;
+		left: 43%;
+		top: -25%;
+		transform: rotate(-10deg);
+	}
+
+	a:hover:after {
+		font-size: 5vw;
+	}
+	
+	p {
+		font-size: 4.4vw;
+		padding-bottom: 150px;
+	}
+	
+	mark {
+		font-weight: 500;
+		color: #0064b3;
+	}
+	
+	@media only screen and (max-width: 767px) {
+		p {
+			font-size: 7vw;
+			padding-bottom: 50px;
+		}
+		
+		h1.intro {
+			animation: 17s fadeIn;
+			animation-fill-mode: forwards;
+			visibility: hidden;
+		}
+	}
+  </style>
+</head>
+<body class="bg-light bg-light2">
+	<p class="multipleStrings"></p>
+	<h1 class="intro"><a href="signin.html" title="诪讛 转专爪讜 诇注砖讜转 讻注转?">讛<span>转讞诇讛</span></a></h1>
+	<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+	<script>
+		new TypeIt(".multipleStrings", {
+		  strings: ["<mark>拽址讗驻旨侄诇职住 讙讬讬诐</mark> 讛讜讗 诪砖讞拽 讝讜讙讬", "砖诪讟专转讜 诇拽专讘 讜诇讛注诪讬拽 讗转", "讛讗讬谞讟诪讬讜转 讜讛拽砖专 讘讬谞讻诐", "", "诪讟专转 讛诪砖讞拽 讛讬讗 诇讛谞讜转,", "诇讛砖转讞专专 诪注拽讘讜转,", "诇爪讞讜拽, 诇讛住转拽专谉 讜讘注讬拽专", "诇砖讞拽 诪讘诇讬 诇讛砖讞拽", "", "砖讞拽讜 讜转讛谞讜!"],
+		  speed: 50,
+		  waitUntilVisible: true,
+		}).go();
+	</script>
+</body>
+</html>
