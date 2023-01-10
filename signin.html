@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-blue">
+	<div>
+		<h1 class="text-white">מוכנים לצאת להרפתקה?</h1>
+		<input type="text" id="fname" class="storage" placeholder="הקלידו את שמכם">
+		<button class="button">↫</button>
+	</div>
+	<h1 class="text-white hidden">ברוכים הבאים למשחק</h1>
+	<h2 class="contentLoc"></h2>
+	<a class="simple hidden" href="please-choose.html">⤳</a>
+<script src="jquery-3.6.3.min.js"></script>
+<script>
+const text= document.querySelector
+('.storage')
+const button =document.querySelector
+('.button') 
+const content =document.querySelector
+('.contentLoc')
+
+button.addEventListener('click', () => {
+   let nameValue = $("#fname").val();
+    if($("#fname").val() == ''  || $("#fname").val() == "null") {
+      alert(" מה שמכם זוג נחמד? ~~~~*~~~~");
+      return true;
+    } else {
+		$(".hidden").removeClass("hidden");
+		$("a").removeClass("hidden");
+		$("div").addClass("hidden");
+		$("body").addClass("bg-mag");
+	   content.innerText =text.value;
+	   text.value=""
+      return false;
+    }
+})   
+</script>
+</body>
+</html>
