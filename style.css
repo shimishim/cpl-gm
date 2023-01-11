@@ -60,6 +60,10 @@ h1.intro {
 	margin: 8rem auto 4rem;
 }
 
+.bg-light2 h1.intro{
+	margin: 1rem auto;
+}
+
 h1.intro span {
 	font-weight: 300;
 	color: #0064b3;
