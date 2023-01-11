@@ -573,8 +573,10 @@ h1:hover + a, h1:focus + a {
 		padding: 13px;
 		font-size: 13vw;
 		line-height: 19px;
-		vertical-align: bottom;
-		margin-right: 10px;
+		display: block;
+		margin: 15px auto;
+		width: 100%;
+		max-width: 265px;
 	}
 
 	.storage:focus-visible  {
@@ -588,5 +590,10 @@ h1:hover + a, h1:focus + a {
 	
 	a.link:hover, a.link:focus {
 		box-shadow: 0 0 0 .5rem rgb(233 30 99 / 50%);
+	}
+	
+	.storage {
+		width: 100%;
+		max-width: 225px;
 	}
 }
