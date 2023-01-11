@@ -33,6 +33,10 @@ body {
 	background: #d8e4ef;
 }
 
+.bg-light2 {
+	background: #7cc9ff;
+}
+
 .bg-blue {
 	background: #0369a1;
 }
@@ -53,6 +57,7 @@ h1 {
 h1.intro {
     font-size: 14.5vw;
     font-weight: 500;
+	margin: 8rem auto 4rem;
 }
 
 h1.intro span {
@@ -477,9 +482,40 @@ a.simple:hover {
 	font-weight:500;
 }
 
+a.link {
+    font-size: 5vw;
+	letter-spacing: .3em;
+	border: .5rem solid #e91e63;
+	background-color: #e91e63;
+	box-shadow: 1rem 1rem #0064b3;
+	border-radius: 12px;
+	color: #fff;
+	transition: .3s;
+	font-weight:400;
+	padding: 1rem 2rem 1rem 4rem;
+}
+
+a.link:hover, a.link:focus {
+	font-weight:400;
+	box-shadow: 0 0 0 1rem rgb(233 30 99 / 50%);
+}
+
+a.link:after {
+    display: none;
+}
+
+a.link:before {
+    display: none;
+}
+
+h1:hover + a, h1:focus + a {
+	border: .5rem solid #fff;
+}
+
 @media only screen and (max-width: 767px) {
 	h1.intro {
 		font-size: 25.5vw;
+		margin-bottom: 1rem;
 	}
 	
 	a:before {
@@ -539,5 +575,14 @@ a.simple:hover {
 
 	.storage:focus-visible  {
 		box-shadow: 0 0 0 5px #e91e63;
+	}
+	
+	a.link {
+		font-size: 10vw;
+		padding: .5rem .5rem .5rem 1rem;
+	}
+	
+	a.link:hover, a.link:focus {
+		box-shadow: 0 0 0 .5rem rgb(233 30 99 / 50%);
 	}
 }
