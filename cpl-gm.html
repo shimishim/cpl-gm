@@ -70,13 +70,14 @@
 	
 	mark {
 		font-weight: 500;
-		color: #0064b3;
+		color: #113a95;
 	}
 	
 	@media only screen and (max-width: 767px) {
 		p {
 			font-size: 7vw;
-			padding-bottom: 50px;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
 		}
 		
 		h1.intro {
@@ -84,16 +85,20 @@
 			animation-fill-mode: forwards;
 			visibility: hidden;
 		}
+		
+		h1.intro a {
+			margin-bottom: 2rem;
+		}
 	}
   </style>
 </head>
 <body class="bg-light bg-light2">
 	<p class="multipleStrings"></p>
-	<h1 class="intro"><a href="signin.html">ה<span>תחלה</span></a></h1>
+	<h1 class="intro"><a class="link" href="signin.html" title="התחלה">התחילו</a></h1>
 	<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 	<script>
 		new TypeIt(".multipleStrings", {
-		  strings: ["<mark>קַאפֶּלְס גיים</mark> הוא משחק זוגי", "שמטרתו לקרב ולהעמיק את", "האינטמיות והקשר בינכם", "", "מטרת המשחק היא להנות,", "להשתחרר מעקבות,", "לצחוק, להסתקרן ובעיקר", "לשחק מבלי להשחק", "", "שחקו ותהנו!"],
+		  strings: ["<mark>קַאפֶּלְס גיים</mark> הוא משחק זוגי", "מהנה, ייחודי ויצירתי", "שמטרתו לקרב ולהעמיק את", "האינטימיות והקשר בינכם", "＊*•̩̩͙✩•̩̩͙*˚-❤-＊*•̩̩͙✩•̩̩͙*˚", "מטרת המשחק היא להנות,", "להשתחרר מעכבות,", "לצחוק, להסתקרן, להתקרב", "ובעיקר לשחק", "עם חֵשֶׁק", "<small>｡･:*:･ﾟ★,‧͙⁺˚*･༓</small>", "<strong>אז שחקו <mark>ותהנו!</mark></strong>"],
 		  speed: 50,
 		  waitUntilVisible: true,
 		}).go();
