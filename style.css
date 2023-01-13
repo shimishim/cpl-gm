@@ -449,16 +449,18 @@ a.simple {
     line-height: 0.6;
 }
 a.simple:before {
-	content: "";
+	content: "צאו לדרך";
     display: block;
     position: absolute;
     transition: all ease 0.5s;
     z-index: -1;
 	color: unset;
-	right: unset;
-    top: unset;
     transform: inherit;
-    font-size: 2vw;
+    font-size: 4vw;
+    top: 45%;
+    left: auto;
+    width: max-content;
+    right: -100%;
 }
 
 a.simple:after {
@@ -471,13 +473,12 @@ a.simple:hover:after {
 }
 
 a.simple:hover:before {
-	content: "צאו לדרך";
     right: auto;
-    color: #fff;
-    font-size: 8vw;
+    color: #d8e4ef;
+    font-size: 6vw;
     transform: inherit;
     width: max-content;
-    top: 33%;
+    top: 39%;
     left: 100%;
 }
 
@@ -595,5 +596,15 @@ h1:hover + a, h1:focus + a {
 	.storage {
 		width: 100%;
 		max-width: 225px;
+	}
+	
+	a.simple {
+		margin-bottom: 10rem;
+	}
+	
+	a.simple:before, a.simple:hover:before {
+		font-size: 22vw;
+		top: -200%;
+		right: -200%;
 	}
 }
