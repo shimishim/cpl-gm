@@ -33,10 +33,6 @@ body {
 	background: #d8e4ef;
 }
 
-.bg-light2 {
-	background: #7cc9ff;
-}
-
 .bg-blue {
 	background: #0369a1;
 }
@@ -47,6 +43,18 @@ body {
 
 .bg-mag {
 	background: #e91e63;
+}
+
+.bg-pink {
+	background: #ff56ac;
+}
+
+.bg-light2 {
+	background: #7cc9ff;
+}
+
+.bg-green {
+	background: #bcff6d;
 }
 
 h1 {
