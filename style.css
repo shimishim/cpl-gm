@@ -624,9 +624,9 @@ a.link2:hover, a.link2:focus {
 	}
 	
 	a.simple:before, a.simple:hover:before {
-		font-size: 20vw;
-		top: -200%;
-		right: -200%;
+		font-size: 17vw;
+		top: -150%;
+		right: -150%;
 	}
 
 	h3 {
