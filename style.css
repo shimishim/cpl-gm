@@ -517,6 +517,27 @@ h1:hover + a, h1:focus + a {
 	border: .5rem solid #fff;
 }
 
+h3 {
+	line-height: 1.1;
+    font-size: 3vw;
+	font-weight:300;
+	color: #fff;
+}
+
+a.link2 {
+    font-size: 3vw;
+	color: #e91e63;
+	font-weight: 600;
+	border: .5rem solid #dff904;
+	background-color: #dff904;
+	margin-bottom: 2rem
+}
+
+a.link2:hover, a.link2:focus {
+	font-weight:600;
+	box-shadow: 0 0 0 1rem #0064b3;
+}
+
 @media only screen and (max-width: 767px) {
 	h1.intro {
 		font-size: 25.5vw;
@@ -603,8 +624,26 @@ h1:hover + a, h1:focus + a {
 	}
 	
 	a.simple:before, a.simple:hover:before {
-		font-size: 22vw;
+		font-size: 20vw;
 		top: -200%;
 		right: -200%;
+	}
+
+	h3 {
+		font-size: 6vw;
+	}
+
+	a.link2 {
+		font-size: 7vw;
+		color: #e91e63;
+		font-weight: 600;
+		border: .5rem solid #dff904;
+		background-color: #dff904;
+		margin: 2rem auto;
+	}
+
+	a.link2:hover, a.link2:focus {
+		font-weight:600;
+		box-shadow: 0 0 0 .7rem #0064b3;
 	}
 }
